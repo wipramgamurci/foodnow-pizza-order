@@ -1,42 +1,40 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
 import Card from "./components/Card.vue";
 import Button from "./components/Button.vue";
 </script>
 
 <template>
-  <!-- <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="hero">
+    <p>Pizza order</p>
   </div>
-  <HelloWorld msg="Vite + Vue" /> -->
-
-  <h1 class="hello">Hello World!</h1>
+  <!-- <h1 class="hello">Hello World!</h1>
   <div class="hero">
     <h2 class="hero-text">This is a pizza order app.</h2>
     <p class="hero-description">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
     </p>
-  </div>
+  </div> -->
   <Card />
   <Button>Click me</Button>
 </template>
 
-<style scoped>
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style lang="scss" scoped>
+@use "./styles/_mixins.scss";
+
+.hero {
+  // background-color: var(--secondary-color);
+  background-image: url("./assets/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 16dvw 0;
+  display: flex;
+  justify-content: center;
+
+  p {
+    @include mixins.text-8xl;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-} */
 </style>
