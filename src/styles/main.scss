@@ -1,0 +1,24 @@
+@use "variables";
+
+// :root {
+//   --primary-color: red;
+//   --secondary-color: green;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hello {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  &-text {
+    color: var(--primary-color);
+  }
+}
