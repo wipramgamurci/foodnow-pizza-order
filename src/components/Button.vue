@@ -14,7 +14,7 @@ const handleClick = () => {
 @use "./../styles/_mixins.scss";
 
 .button {
-  display: inline-block;
+  // display: inline-block;
   background-color: var(--primary-color);
   padding: 14px 43.5px;
   border-radius: 50px;

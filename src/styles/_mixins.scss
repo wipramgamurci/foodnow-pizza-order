@@ -22,3 +22,9 @@
   font-size: 96px;
   line-height: 130.73px;
 }
+
+@mixin x-center-absolute {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
