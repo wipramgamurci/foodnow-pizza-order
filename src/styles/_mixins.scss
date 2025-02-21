@@ -1,0 +1,24 @@
+@mixin text-lg {
+  font-size: 18px;
+  line-height: 24.51px;
+}
+
+@mixin text-xl {
+  font-size: 20px;
+  line-height: 27.24px;
+}
+
+@mixin text-2xl {
+  font-size: 24px;
+  line-height: 32.68px;
+}
+
+@mixin text-5xl {
+  font-size: 48px;
+  line-height: 65.37px;
+}
+
+@mixin text-8xl {
+  font-size: 96px;
+  line-height: 130.73px;
+}

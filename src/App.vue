@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
 import Card from "./components/Card.vue";
+import Button from "./components/Button.vue";
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import Card from "./components/Card.vue";
     </p>
   </div>
   <Card />
+  <Button>Click me</Button>
 </template>
 
 <style scoped>
